@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kadjai Travels | Premium Family & Outstation Travel</title>
+
+  <meta
+    name="description"
+    content="Premium Ertiga travel services from Mumbai for airport transfers, family trips, Shirdi, Lonavala, Pune, Goa and outstation travel."
+  />
+
+  <meta
+    name="keywords"
+    content="Mumbai travels, Ertiga rental Mumbai, Mumbai airport taxi, Pune cab, Shirdi cab, Goa cab, family travel"
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- HEADER -->
+<header class="bg-black text-white sticky top-0 z-50 shadow-lg">
+
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- LOGO + TITLE -->
+    <div class="flex items-center gap-3">
+
+      <img
+        src="assets/logoo.png"
+        alt="Kadjai Travels Logo"
+        class="w-20 h-20 object-contain"
+      >
+
+      <h1 class="text-2xl font-bold tracking-wide text-yellow-400">
+        KADJAI TRAVELS
+      </h1>
+
+    </div>
+
+    <!-- BUTTON -->
+    <a
+      href="#booking"
+      class="bg-yellow-500 hover:bg-yellow-400 text-black px-5 py-2 rounded-lg font-semibold transition"
+    >
+      Book Now
+    </a>
+
+  </div>
+
+</header>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-br from-black via-gray-900 to-black text-white py-20">
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- LEFT -->
+      <div>
+
+        <p class="text-yellow-400 uppercase tracking-widest text-sm font-semibold mb-4">
+          Premium Family & Outstation Travel
+        </p>
+
+        <h2 class="text-5xl font-bold leading-tight mb-6">
+          Safe, Comfortable & Reliable Travel From Mumbai
+        </h2>
+
+        <p class="text-gray-300 text-lg mb-8">
+          Book premium Ertiga rides for airport transfers, family trips,
+          business travel and outstation journeys across Maharashtra & Goa.
+        </p>
+
+        <div class="grid grid-cols-2 gap-4 text-sm">
+
+          <div class="bg-white/10 p-4 rounded-xl">
+            ✅ Verified Driver
+          </div>
+
+          <div class="bg-white/10 p-4 rounded-xl">
+            ✅ AC Always On
+          </div>
+
+          <div class="bg-white/10 p-4 rounded-xl">
+            ✅ Family Friendly
+          </div>
+
+          <div class="bg-white/10 p-4 rounded-xl">
+            ✅ No Surge Pricing
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div
+        id="booking"
+        class="bg-white text-black p-8 rounded-2xl shadow-2xl"
+      >
+
+        <h3 class="text-2xl font-bold mb-2">
+          Quick Booking Inquiry
+        </h3>
+
+        <p class="text-gray-500 text-sm mb-6">
+          Fill details & continue instantly on WhatsApp.
+        </p>
+
+        <form onsubmit="sendBooking(event)" class="space-y-5">
+
+          <div>
+            <label class="block text-sm font-semibold mb-2">
+              Select Route
+            </label>
+
+            <select
+              id="service"
+              required
+              class="w-full border border-gray-300 p-3 rounded-lg"
+            >
+
+              <option value="">Choose Route</option>
+
+              <option>
+                Mumbai → Lonavala (Round Trip)
+              </option>
+
+              <option>
+                Mumbai → Pune (Round Trip)
+              </option>
+
+              <option>
+                Mumbai → Shirdi (Round Trip)
+              </option>
+
+              <option>
+                Mumbai → Mahabaleshwar
+              </option>
+
+              <option>
+                Mumbai → Goa
+              </option>
+
+              <option>
+                Mumbai Airport Pickup/Drop
+              </option>
+
+              <option>
+                Full Day Rental (8 Hrs)
+              </option>
+
+              <option>
+                Custom Trip Inquiry
+              </option>
+
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold mb-2">
+              Travel Date
+            </label>
+
+            <input
+              type="date"
+              id="date"
+              required
+              class="w-full border border-gray-300 p-3 rounded-lg"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold mb-2">
+              Full Name
+            </label>
+
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+              class="w-full border border-gray-300 p-3 rounded-lg"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-bold transition"
+          >
+            Continue on WhatsApp
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-14">
+
+        <h3 class="text-4xl font-bold mb-4">
+          Our Services
+        </h3>
+
+        <p class="text-gray-500">
+          Reliable travel packages with transparent pricing.
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- CARD -->
+        <div class="bg-white rounded-2xl p-8 shadow-md">
+
+          <div class="text-4xl mb-4">✈️</div>
+
+          <h4 class="text-2xl font-bold mb-3">
+            Airport Transfers
+          </h4>
+
+          <p class="text-gray-600">
+            Comfortable airport pickup & drop service for families and business travelers.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="bg-white rounded-2xl p-8 shadow-md">
+
+          <div class="text-4xl mb-4">🛣️</div>
+
+          <h4 class="text-2xl font-bold mb-3">
+            Outstation Trips
+          </h4>
+
+          <p class="text-gray-600">
+            Travel safely to Pune, Shirdi, Lonavala, Mahabaleshwar & Goa.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="bg-white rounded-2xl p-8 shadow-md">
+
+          <div class="text-4xl mb-4">💼</div>
+
+          <h4 class="text-2xl font-bold mb-3">
+            Full-Day Rentals
+          </h4>
+
+          <p class="text-gray-600">
+            Dedicated 8-hour & 12-hour packages for weddings, shopping & business use.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SAFETY -->
+  <section class="bg-black text-white py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-14">
+
+        <h3 class="text-4xl font-bold mb-4 text-yellow-400">
+          The Kadjai Safety Promise
+        </h3>
+
+        <p class="text-gray-400">
+          Safe and smooth journeys for every family.
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+
+        <div class="bg-white/10 p-6 rounded-xl">
+          🪪 ID verification for selected bookings
+        </div>
+
+        <div class="bg-white/10 p-6 rounded-xl">
+          ☕ Regular driver rest breaks
+        </div>
+
+        <div class="bg-white/10 p-6 rounded-xl">
+          📍 Live WhatsApp location sharing
+        </div>
+
+        <div class="bg-white/10 p-6 rounded-xl">
+          🛡️ Transparent payment process
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-10">
+
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <h4 class="text-2xl font-bold text-yellow-400 mb-4">
+        Kadjai Travels
+      </h4>
+
+      <p class="text-gray-400 mb-2">
+        ✉️ kadjaitravels@gmail.com
+      </p>
+
+      <p class="text-gray-500 text-sm">
+        Mumbai • Pune • Shirdi • Goa • Lonavala
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- WHATSAPP FLOAT BUTTON -->
+  <a
+    href="https://wa.me/918689804096"
+    target="_blank"
+    class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl text-2xl"
+  >
+    💬
+  </a>
+
+  <!-- SCRIPT -->
+  <script>
+
+    function sendBooking(event) {
+
+      event.preventDefault();
+
+      const service = document.getElementById("service").value;
+      const date = document.getElementById("date").value;
+      const name = document.getElementById("name").value;
+
+      const phoneNumber = "918689804096";
+
+      const message =
+        `Hi Kadjai Travels,%0A%0A` +
+        `I want to book a trip.%0A%0A` +
+        `Route: ${service}%0A` +
+        `Date: ${date}%0A` +
+        `Name: ${name}%0A%0A` +
+        `Please confirm availability.`;
+
+      window.open(
+        `https://wa.me/${phoneNumber}?text=${message}`,
+        "_blank"
+      );
+
+    }
+
+  </script>
+
+</body>
+</html>
